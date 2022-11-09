@@ -31,7 +31,7 @@
 }
 
 #logo{
-    font-size: 2em; /*1 em 16 px*/
+    font-size: 2em; 
 }
 
 #logos{

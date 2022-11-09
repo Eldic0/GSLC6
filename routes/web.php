@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\bladecontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,8 +17,5 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
 
-Route::redirect('/home', '/?hari=');
+Route::get('/home', [bladecontroller::class,"control"]);
